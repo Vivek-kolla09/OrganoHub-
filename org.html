@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrganoHub - Fresh Organic Products</title>
+    
+    <!-- Bootstrap CSS from CDN (Content Delivery Network) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+    <style>
+     
+        .bg-green {
+            background-color: #2d6a4f;
+        }
+        
+        .bg-light-green {
+            background-color: #52b788;
+        }
+        
+        .text-green {
+            color: #2d6a4f;
+        }
+        
+        /* Hero section gradient background */
+        .hero-section {
+            background: linear-gradient(to right, #1b4332, #2d6a4f, #52b788);
+            min-height: 100vh;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!-- Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            
+            <a class="navbar-brand fw-bold fs-3 text-green" href="#">
+                <i class="bi bi-tree-fill"></i> OrganoHub
+            </a>
+            
+            <!-- Menu Button which appears on small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Nav Menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <!-- Menu Items (centered using mx-auto) -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Right side icons -->
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-search"></i></a>
+                    <a href="#" class="text-dark fs-5"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="text-dark fs-5 position-relative">
+                        <i class="bi bi-cart3"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Starts Here! -->
+    <section id="home" class="hero-section text-white" style="padding-top: 80px;">
+        <div class="container">
+            <!-- Row with full height of viewport -->
+            <div class="row align-items-center" style="min-height: 100vh;">
+                <div class="col-lg-7">
+                    
+                    <span class="badge bg-light text-dark px-4 py-2 mb-3">
+                        <i class="bi bi-patch-check-fill"></i> 100% Organic
+                    </span>
+                    
+                    <!-- Main heading -->
+                    <h1 class="display-3 fw-bold mb-4">
+                        Fresh Organic Products Delivered Daily
+                    </h1>
+                    
+                    <!-- Description -->
+                    <p class="fs-5 mb-4">
+                        Quality you can trust, the taste which you'll love. Get farm-fresh veggies, 
+                        fruits, and dairy products delivered right to your doorstep.
+                    </p>
+                    
+        
+                    <div class="d-flex gap-3">
+                        <a href="#products" class="btn btn-light btn-lg px-4 rounded-pill">
+                            Shop Now
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+                            Learn More
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Features Section Starts Here! -->
+<section class="py-5 bg-light">
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Card-1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card feature-card border-0 shadow-sm text-center p-4 h-100">
+                    <div class="bg-light-green text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-truck fs-1"></i>
+                    </div>
+                    <!-- Heading of Card-1 -->
+                    <h5 class="fw-bold">Free Shipping</h5>
+                    <!-- Description -->
+                    <p class="text-muted mb-0">On orders over $50</p>
+                </div>
+            </div>
+            <!-- Card-2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card feature-card border-0 shadow-sm text-center p-4 h-100">
+                    <div class="bg-light-green text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-shield-check fs-2"></i>
+                    </div>
+                    <!-- Heading Card-2 -->
+                    <h5 class="fw-bold">100% Organic</h5>
+                    <!-- Description -->
+                    <p class="text-muted mb-0">Certified Organic</p>
+                </div>
+            </div>
+            <!-- Card-3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card feature-card border-0 shadow-sm text-center p-4 h-100">
+                    <div class="bg-light-green text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-clock-history fs-2"></i>
+                    </div>
+                    <!-- Heading Card-3 -->
+                    <h5 class="fw-bold">Fresh Daily</h5>
+                    <!-- Description -->
+                    <p class="text-muted mb-0">Delivered Fresh</p>
+                </div>
+            </div>
+            <!-- Card-4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card feature-card border-0 shadow-sm text-center p-4 h-100">
+                    <div class="bg-light-green text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-headset fs-2"></i>
+                    </div>
+                    <!-- Heading Card-4 -->
+                    <h5 class="fw-bold">Support</h5>
+                    <!-- Description -->
+                    <p class="text-muted mb-0">24/7 Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="py-5" id="products">
+    <div class="container py-5">
+        <!-- Title -->
+        <div class="text-center mb-5">
+            <span class="badge bg-light-green text-white px-4 py-2 mb-3">OUR PRODUCTS</span>
+            <h2 class="display-5 fw-bold">Featured Products</h2>
+            <p class="text-muted">Fresh Organic Products handpicked Just for you!</p>
+        </div>
+        <div class="row g-4">
+            <!-- Product Card-1 -->
+            <div class="col-md-4 col-lg-4">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500" class="card-img-top" alt="Tomatoes" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="text-muted small mb-2">Vegetables</p>
+                        <h5 class="card-title fw-bold">Organic Tomatoes</h5>
+                        <div class="mb-3">
+                            <span class="text-warning">★★★★★</span>
+                            <span class="text-muted small">5</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h4 mb-0 text-green fw-bold">$4.99</span>
+                            <button class="btn btn-success rounded-pill">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card-2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <img src="https://freshindiaorganics.com/cdn/shop/products/Apples.jpg?v=1686739530" class="card-img-top" alt="Apples" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="text-muted small mb-2">FRUITS</p>
+                        <h5 class="card-title fw-bold">Fresh Apples</h5>
+                        <div class="mb-3">
+                            <span class="text-warning">★★★★★</span>
+                            <span class="text-muted small">(5.0)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h4 mb-0 text-green fw-bold">$5.99</span>
+                            <button class="btn btn-success rounded-pill">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card-3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500" class="card-img-top" alt="Milk" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="text-muted small mb-2">DAIRY</p>
+                        <h5 class="card-title fw-bold">Organic Milk</h5>
+                        <div class="mb-3">
+                            <span class="text-warning">★★★★★</span>
+                            <span class="text-muted small">(4.9)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h4 mb-0 text-green fw-bold">$3.99</span>
+                            <button class="btn btn-success rounded-pill">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card-4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=500" class="card-img-top" alt="Carrots" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="text-muted small mb-2">VEGETABLES</p>
+                        <h5 class="card-title fw-bold">Fresh Carrots</h5>
+                        <div class="mb-3">
+                            <span class="text-warning">★★★★☆</span>
+                            <span class="text-muted small">(4.6)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h4 mb-0 text-green fw-bold">$2.99</span>
+                            <button class="btn btn-success rounded-pill">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card-5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500" class="card-img-top" alt="Oranges" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="text-muted small mb-2">FRUITS</p>
+                        <h5 class="card-title fw-bold">Fresh Oranges</h5>
+                        <div class="mb-3">
+                            <span class="text-warning">★★★★★</span>
+                            <span class="text-muted small">(4.7)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h4 mb-0 text-green fw-bold">$6.99</span>
+                            <button class="btn btn-success rounded-pill">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card-6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card product-card border-0 shadow-sm h-100">
+                    <img src="https://freshindiaorganics.com/cdn/shop/files/Untitleddesign_21.png?v=1686905685" class="card-img-top" alt="Broccoli" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="text-muted small mb-2">VEGETABLES</p>
+                        <h5 class="card-title fw-bold">Fresh Broccoli</h5>
+                        <div class="mb-3">
+                            <span class="text-warning">★★★★☆</span>
+                            <span class="text-muted small">(4.5)</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h4 mb-0 text-green fw-bold">$3.49</span>
+                            <button class="btn btn-success rounded-pill">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<style>
+    .feature-card:hover, .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+</style>
+<section id="about" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                
+            
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800" 
+                         class="img-fluid rounded shadow" 
+                         alt="About Us">
+                </div>
+                
+                <!-- Right: Text Content -->
+                <div class="col-lg-6">
+                    <span class="badge bg-light-green text-white px-4 py-2 mb-3">ABOUT US</span>
+                    <h2 class="display-5 fw-bold mb-4">Why Choose OrganoHub?</h2>
+                    <p class="lead text-muted mb-4">
+                        We are committed to providing the freshest organic produce directly 
+                        from local farms to your table. Every product is carefully selected 
+                        and quality-checked.
+                    </p>
+                    
+                    <!-- Features List -->
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success fs-5 me-2"></i>
+                            <strong>100% Certified Organic</strong> - All our products are certified
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success fs-5 me-2"></i>
+                            <strong>Farm Fresh Daily</strong> - Delivered within 24 hours of harvest
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success fs-5 me-2"></i>
+                            <strong>No Chemicals</strong> - Zero pesticides or harmful chemicals
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success fs-5 me-2"></i>
+                            <strong>Support Local Farmers</strong> - Directly from nearby farms
+                        </li>
+                    </ul>
+                    
+                    <a href="#products" class="btn btn-success btn-lg rounded-pill px-4 mt-3">
+                        Shop Now
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+<section id="testimonials" class="py-5">
+  <div class="container py-5">
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <span class="badge bg-light-green text-white px-4 py-2 mb-3">TESTIMONIALS</span>
+      <h2 class="display-5 fw-bold">What Our Customers Say</h2>
+      <p class="text-muted">Real reviews from real people</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Testimonial 1 -->
+      <div class="col-md-4">
+        <div class="card testimonial-card border-0 shadow-sm p-4 h-100">
+          <div class="text-warning mb-3 fs-5">★★★★★</div>
+          <p class="mb-4 text-muted">
+            "Amazing quality! The vegetables are so fresh and last much longer than what I get from supermarkets. Highly recommended!"
+          </p>
+          <div class="d-flex align-items-center">
+            <img src="https://i.pravatar.cc/100?img=1" class="rounded-circle me-3" width="60" height="60" alt="Customer">
+            <div>
+              <h6 class="mb-0 fw-bold">Sarah Johnson</h6>
+              <small class="text-muted">Regular Customer</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-4">
+        <div class="card testimonial-card border-0 shadow-sm p-4 h-100">
+          <div class="text-warning mb-3 fs-5">★★★★★</div>
+          <p class="mb-4 text-muted">
+            "Best organic products in town! Fast delivery and excellent customer service. My family loves everything we order."
+          </p>
+          <div class="d-flex align-items-center">
+            <img src="https://i.pravatar.cc/100?img=12" class="rounded-circle me-3" width="60" height="60" alt="Customer">
+            <div>
+              <h6 class="mb-0 fw-bold">Michael Chen</h6>
+              <small class="text-muted">Health Enthusiast</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-4">
+        <div class="card testimonial-card border-0 shadow-sm p-4 h-100">
+          <div class="text-warning mb-3 fs-5">★★★★★</div>
+          <p class="mb-4 text-muted">
+            "I've been ordering from OrganoHub for 6 months now. The taste difference is incredible. Never going back to regular stores!"
+          </p>
+          <div class="d-flex align-items-center">
+            <img src="https://i.pravatar.cc/100?img=5" class="rounded-circle me-3" width="60" height="60" alt="Customer">
+            <div>
+              <h6 class="mb-0 fw-bold">Emily Rodriguez</h6>
+              <small class="text-muted">Home Chef</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-green text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-3">Subscribe to Newsletter</h2>
+                    <p class="mb-4">Get updates on new products and special offers</p>
+                    
+                    <!-- Newsletter Form -->
+                    <form class="d-flex gap-2">
+                        <input type="email" 
+                               class="form-control form-control-lg" 
+                               placeholder="Enter your email" 
+                               required>
+                        <button type="submit" class="btn btn-light btn-lg px-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Page Footer: About Section -->
+<footer id="contact" class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+             
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-tree-fill"></i> OrganoHub
+                    </h5>
+                    <p class="text-white-50">
+                        Your trusted source for fresh organic produce delivered daily.
+                    </p>
+       
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+         
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#products" class="text-white-50 text-decoration-none">Products</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Vegetables</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Fruits</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Dairy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Grains</a></li>
+                    </ul>
+                </div>
+                
+              
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contact Us</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            123 Organic Street, City
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            +1 234 567 8900
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            hello@organohub.com
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <!-- Copyright -->
+            <hr class="my-4 bg-white opacity-25">
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2025 OrganoHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+ <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" id="backToTop" class="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-4" style="display: none; width: 50px; height: 50px;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+    <script>
+        // Show/hide back to top button when scrolling
+        window.onscroll = function() {
+            const button = document.getElementById('backToTop');
+            if (document.documentElement.scrollTop > 300) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        };
+        
+        // Scroll to top 
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+
